@@ -8,6 +8,7 @@ services:
       - "3881:3881"
     tty: true
     privileged: true
+    command: /opt/zk/zookeeper-3.4.14/bin/zkServer.sh start-foreground
     volumes: 
       - ./local/zk1:/var/cc/zk:rw
       - ./local/zk2/zoo.cfg:/opt/zk/zookeeper-3.4.14/conf/zoo.cfg
@@ -19,6 +20,7 @@ services:
       - "3882:3882"
     tty: true
     privileged: true
+    command: /opt/zk/zookeeper-3.4.14/bin/zkServer.sh start-foreground
     volumes: 
       - ./local/zk2:/var/cc/zk:rw
       - ./local/zk2/zoo.cfg:/opt/zk/zookeeper-3.4.14/conf/zoo.cfg
@@ -30,6 +32,7 @@ services:
       - "3883:3883"
     tty: true
     privileged: true
+    command: /opt/zk/zookeeper-3.4.14/bin/zkServer.sh start-foreground
     volumes: 
       - ./local/zk3:/var/cc/zk:rw
       - ./local/zk2/zoo.cfg:/opt/zk/zookeeper-3.4.14/conf/zoo.cfg
@@ -41,6 +44,7 @@ services:
       - "3884:3884"
     tty: true
     privileged: true
+    command: /opt/zk/zookeeper-3.4.14/bin/zkServer.sh start-foreground
     volumes: 
       - ./local/zk4:/var/cc/zk:rw
       - ./local/zk2/zoo.cfg:/opt/zk/zookeeper-3.4.14/conf/zoo.cfg
